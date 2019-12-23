@@ -1,0 +1,2 @@
+Traffic capture:
+sudo tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e _ws.col.Time -e ip.addr -e ip.proto -e ip.ttl> test.csv
